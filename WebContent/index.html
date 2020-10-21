@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Library System</title>
+<style>
+
+	body{
+	 background-image: url("book.jpg");
+	 background-color: #cccccc;
+	 width:100%;
+	 height:450px;
+	}
+	
+	
+	#up{
+	padding:10px;
+	height:20%;
+	background-color:#FFE4C4;
+	
+	}
+	
+	
+	#main-box{
+	background-color: #FFE4C4;
+	margin-top:200px;
+	margin-left:480px;
+	padding:10px;
+	height :35%;
+	width:20%;
+	text-align:center;
+	
+	}
+
+</style>
+
+</head>
+<body>
+
+	<div id="up">
+	<h1 align= "center">Library Management System</h1>
+
+	</div>
+	
+	
+	<div id = "main-box">
+	<h2>Admin Login!</h2> 
+	<form action = "home.html" method ="post" onsubmit="return myfunction()">
+		<table>
+		
+		<tr>
+		<td>Admin Id:<input type = "text" id="user" name = "userid"></td>
+		</tr>
+		
+		<tr>
+		<td>Password:<input type = "password" id="pwd" name = "pwd"></td>
+		</tr>
+
+		
+		<tr>
+		<td><button type="submit">Login</button></td>
+		</tr>
+		
+		</table>
+		</form>
+
+	</div>
+	
+<script>
+
+
+function myfunction() {
+	var e=document.getElementById("user").value;
+	var f=document.getElementById("pwd").value;
+	var status=true;
+  if(e!="admin" || f!="1234admin"){
+	  alert("Please enter correct user id and password");
+	  status=false;
+  }
+  return status;
+}
+</script>
+
+
+</body>
+</html>

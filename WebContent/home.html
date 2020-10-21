@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home</title>
+<style>
+	body{
+	 background-image: url("book.jpg");
+	 background-color: #cccccc;
+	 width:100%;
+	 height:700px;
+	}
+	
+	#up{
+	padding:10px;
+	height:20%;
+	background-color:#FFE4C4;
+	}
+	
+	.container{
+	display:flex;
+	}
+	
+	#left{
+	padding:20px;
+	height:400px;
+	width:20%;
+	background-color:#FFE4C4;
+	margin-right: 100px;
+	}
+	
+	#right{
+	padding:20px;
+	height:400px;
+	width:50%;
+	background-color:white;
+	margin-right: 100px;
+	}
+</style>
+</head>
+<body>
+	
+		<div id="up">
+		<h1 align ="left">Welcome, Admin!</h1>
+		<h4 align ="right"><a href="index.html">Logout</a></h4>
+
+		</div>
+	<hr>
+	<div class=container>
+		<div id="left">
+		<h3><b><span>Menu</span></b></h3>
+		<br>
+		<hr>
+		<a href="bookDisplay.jsp">BOOKS</a>
+		<hr>
+		<a href="studentdisplay.jsp">Students</a>
+		<hr>
+		<a href="Issuedisplay.jsp">Issue History</a>
+		<hr>
+		</div>
+	
+	
+		<div id="right">	
+		<h3><b><span>Terms and Conditions:</span></b></h3>
+		<hr>
+			<ol>
+				<li>Only Registered students can borrow a book from this Library Management System.</li>
+				<li>Only one book is issued to a student at a time. If any student wants to borrow another book then he/she must return the previous books.</li>
+				<li>A book will not be issued for more than Two weeks. If any student wants to have the book for more than two weeks, then he/she can borrow the same book again.</li>
+				<li>Failure in returning the book on returning date will cost the student 10 rupee fine per day.</li>
+				
+			</ol>
+		</div>
+	</div>
+
+</body>
+</html>

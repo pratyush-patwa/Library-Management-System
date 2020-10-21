@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Library System</title>
+<style>
+	body{
+	 background-image: url("book.jpg");
+	 background-color: #cccccc;
+	 width:100%;
+	 height:500px;
+	}
+	
+	#main-box{
+	background-color: #FFE4C4;
+	margin-top:200px;
+	margin-left:450px;
+	height :50%;
+	width:28%;
+	text-align: center;
+	
+	}
+	
+	h4{
+	color:black;
+	}
+
+</style>
+
+</head>
+<body>
+	
+	<div id = "main-box">
+	<h2>Student Registration Form</h2>
+	<form id="student" action = "insertstudent.jsp" method="post">
+		<table>
+		<tr>
+		<td>Full Name:</td>
+		<td><input type = "text" name = "name"></td>
+		</tr>
+		<tr>
+		
+		
+		<tr>
+		<td>Program/Class:</td>
+		<td>
+		<select name= "program" >
+		<option value = "highschool" selected>High School(10)</option>
+		<option value = "inter" selected>Intermediate(10+2)</option>
+		<option value = "cs" selected>B.tech(CS)</option>
+		<option value = "it">B.Tech(IT)</option>
+		<option value = "ec">B.Tech(EC)</option>
+		</select>
+		</td>		
+		</tr>
+		
+		<tr>
+		<td>Gender:</td>
+		<td><input type="radio" name="gender" value="male"> Male
+  		<input type="radio" name="gender" value="female"> Female
+  		<td>
+		</tr>
+  		
+  		<tr>
+		<td>Mobile:</td>
+		<td><input type = "text" name ="mobile" ></td>		
+		</tr>
+		
+		<tr>
+		<td><button type="submit">Submit</button></td>
+		</tr>
+		</table>
+		</form>
+
+	</div>
+	
+<script>
+document.getElementById("student").onsubmit = function() {myFunction()};
+
+function myFunction() {
+  alert("New Student Added");
+}
+</script>
+
+</body>
+</html>
